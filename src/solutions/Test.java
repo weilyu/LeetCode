@@ -3,6 +3,7 @@ package solutions;
 
 public class Test {
     public static void main(String[] args) {
-        System.out.println(Math.floor(Math.sqrt(8)));
+        Numberof1Bits nb = new Numberof1Bits();
+        nb.hammingWeight(101);
     }
 }
