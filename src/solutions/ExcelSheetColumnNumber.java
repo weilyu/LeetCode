@@ -2,6 +2,9 @@ package solutions;
 
 /**
  * Created by lvwei on 2/18/2016.
+ * https://leetcode.com/problems/excel-sheet-column-number/
+ * Difficulty: Easy
+ * Given a column title as appear in an Excel sheet, return its corresponding column number.
  */
 public class ExcelSheetColumnNumber {
     public int titleToNumber(String s) {
