@@ -10,27 +10,6 @@ package solutions;
  */
 public class BulbSwitcher {
     public int bulbSwitch(int n) {
-        int[] bulbs = new int[n + 1];
-
-        //light all bulbs on the first round
-        for (int i = 1; i < n + 1; i++) {
-            bulbs[i] = 1;
+            return (int) Math.sqrt(n);
         }
-
-        //second to nth round
-        for (int i = 2; i <= n; i++) {
-            for (int k = i; k <= n; k += i) {
-                bulbs[k]++;
-            }
-        }
-
-        //check light bulbs
-        int count = 0;
-        for (int i = 1; i < n + 1; i++) {
-            if (bulbs[i] % 2 != 0) {
-                count++;
-            }
-        }
-        return count;
-    }
 }
