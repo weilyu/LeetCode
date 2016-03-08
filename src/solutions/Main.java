@@ -5,7 +5,7 @@ package solutions;
  */
 public class Main {
     public static void main(String[] args) {
-        WordPattern wp = new WordPattern();
-        wp.test();
+        Numberof1Bits n = new Numberof1Bits();
+        n.tester();
     }
 }
