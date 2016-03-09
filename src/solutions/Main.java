@@ -5,7 +5,7 @@ package solutions;
  */
 public class Main {
     public static void main(String[] args) {
-        PlusOne po = new PlusOne();
-        po.tester();
+        RemoveDuplicateLetters rdl = new RemoveDuplicateLetters();
+        rdl.tester();
     }
 }

@@ -1,7 +1,5 @@
 package solutions;
 
-import java.util.ArrayList;
-
 /**
  * Created by lvwei on 2/18/2016.
  * https://leetcode.com/problems/product-of-array-except-self/
@@ -16,8 +14,8 @@ public class ProductofArrayExceptSelf {
             result[i] = 0;
         }
         int total = 1;
-        for (int i = 0; i < nums.length; i++) {
-            total *= nums[i];
+        for (int num : nums) {
+            total *= num;
         }
         if (total == 0) {
             if (countZeros(nums) > 1) {
@@ -46,8 +44,8 @@ public class ProductofArrayExceptSelf {
     //
     public int countZeros(int[] input) {
         int count = 0;
-        for (int i = 0; i < input.length; i++) {
-            if (input[i] == 0) {
+        for (int anInput : input) {
+            if (anInput == 0) {
                 count++;
             }
         }

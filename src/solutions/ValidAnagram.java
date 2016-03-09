@@ -17,11 +17,7 @@ public class ValidAnagram {
         Arrays.sort(t1);
         String s2 = new String(s1);
         String t2 = new String(t1);
-        if (s2.equals(t2)) {
-            return true;
-        } else {
-            return false;
-        }
+        return s2.equals(t2);
     }
 
 

@@ -27,7 +27,6 @@ public class UglyNumber {
                 num /= 5;
             } else break;
         }
-        if (num == 1) return true;
-        return false;
+        return num == 1;
     }
 }
