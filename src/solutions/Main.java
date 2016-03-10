@@ -5,7 +5,7 @@ package solutions;
  */
 public class Main {
     public static void main(String[] args) {
-        RemoveDuplicateLetters rdl = new RemoveDuplicateLetters();
-        rdl.tester();
+        ReverseInteger ri = new ReverseInteger();
+        System.out.println(ri.reverse(-123));
     }
 }
