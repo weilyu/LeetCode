@@ -5,7 +5,8 @@ package solutions;
  */
 public class Main {
     public static void main(String[] args) {
-        ReverseInteger ri = new ReverseInteger();
-        System.out.println(ri.reverse(-123));
+        TwoSum ts = new TwoSum();
+        int[] nums = {2, 7, 11, 15};
+        System.out.println(ts.twoSum(nums, 9)[1]);
     }
 }
