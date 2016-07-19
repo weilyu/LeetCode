@@ -1,3 +1,5 @@
+package solutions;
+
 /**
  * Created by wei on 7/19/2016.
  * https://leetcode.com/problems/climbing-stairs/
