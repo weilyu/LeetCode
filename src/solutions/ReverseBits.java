@@ -12,13 +12,6 @@ package solutions;
 public class ReverseBits {
     // you need treat n as an unsigned value
     public int reverseBits(int n) {
-        String s = Integer.toBinaryString(n);
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 32 - s.length(); i++) {
-            sb.append('0');
-        }
-        sb.append(s);
-        sb.reverse();
-        return Integer.valueOf(sb.toString(),2);
+        return Integer.reverse(n);
     }
 }
