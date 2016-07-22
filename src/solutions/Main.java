@@ -5,7 +5,7 @@ package solutions;
  */
 public class Main {
     public static void main(String[] args) {
-        ReverseBits rb = new ReverseBits();
-        System.out.println(rb.reverseBits(43261596));
+        AddBinary ab = new AddBinary();
+        System.out.println(ab.convertToInt("11"));
     }
 }
