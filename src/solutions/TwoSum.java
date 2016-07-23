@@ -1,11 +1,10 @@
 package solutions;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 
 /**
- * Created by lvwei on 3/10/2016.
+ * Created by weilyu on 7/23/2016.
  * https://leetcode.com/problems/two-sum/
- * Difficulty: Easy
  * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
  * <p>
  * You may assume that each input would have exactly one solution.
@@ -16,15 +15,14 @@ import java.util.HashMap;
  */
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
-        HashMap<Integer, int[]> sumNumsMap = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            int num1 = nums[i];
-            for (int j = i + 1; j < nums.length; j++) {
-                int num2 = nums[j];
-                int[] value = {i, j};
-                sumNumsMap.put(num1 + num2, value);
-            }
+        ArrayList<Integer> al = new ArrayList<>();
+        for (int i : nums) al.add(i);
+        for (int i = 0; i < al.size(); i++) {
+            int left = target - nums[i];
+            int idxLeft = al.lastIndexOf(left);
+            if (idxLeft != -1 && idxLeft != i)
+                return new int[]{i, idxLeft};
         }
-        return sumNumsMap.get(target);
+        return new int[]{};
     }
 }
