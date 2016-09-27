@@ -2,6 +2,7 @@ package solutions;
 
 /**
  * Created by edwinlyu on 9/27/16.
+ * https://leetcode.com/problems/counting-bits/
  */
 public class CountingBits {
     public int[] countBits(int num) {
